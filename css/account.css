@@ -1,0 +1,63 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	/* min-height: 12rem; */
+	background-color: #f8f8f8;
+}
+
+header {
+	width: 100%;
+	height: 200px;
+	background: url(../images/bac1.png) no-repeat center center;
+	background-size: cover;
+}
+
+header div {
+	height: 100%;
+}
+
+header div img {
+	width: 68px;
+	height: 68px;
+	border-radius: 50%;
+}
+
+header div span {
+	font-size: 16px;
+	font-family: "microsoft yahei";
+	color: #FFFFFF;
+	margin-top: 10px;
+}
+
+section {
+	padding-top: 10px;
+}
+
+section ul li {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+	background: url(../images/arrow-right.png) no-repeat right 20px center;
+	background-color: #FFFFFF;
+	background-size: 6px;
+}
+
+section ul li span {
+	flex: 1;
+	font-size: 14px;
+	line-height: 50px;
+	color: #383838;
+	padding-left: 55px;
+}
+
+section ul li:first-child span {
+	background: url(../images/icon1.png) no-repeat left 25px center;
+	background-size: 22px;
+}
+
+section ul li:last-child span {
+	background: url(../images/icon2.png) no-repeat left 25px center;
+	background-size: 14px;
+}

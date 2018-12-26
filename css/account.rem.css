@@ -1,0 +1,61 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	min-height: 12rem;
+	background-color: #f8f8f8;
+}
+
+header {
+	width: 100%;
+	height: 3.74rem;
+	background: url(../images/bac1.png) no-repeat center center;
+	background-size: contain;
+}
+
+header div {
+	height: 100%;
+}
+
+header div img {
+	width: 1.4rem;
+	height: 1.4rem;
+	border-radius: 50%;
+}
+
+header div span {
+	font-size: 0.28rem;
+	font-family: "microsoft yahei";
+	color: #FFFFFF;
+	margin-top: 0.1rem;
+}
+
+section {
+	padding-top: 0.12rem;
+}
+
+section ul li {
+	background-color: #FFFFFF;
+	margin-bottom: 0.12rem;
+	background: url(../images/arrow-right.png) no-repeat right 0.2rem center;
+	background-color: #FFFFFF;
+	background-size: 0.2rem;
+}
+
+section ul li span {
+	flex: 1;
+	font-size: 0.3rem;
+	line-height: 1rem;
+	color: #383838;
+	padding-left: 1.2rem;
+}
+
+section ul li:first-child span {
+	background: url(../images/icon1.png) no-repeat left 0.3rem center;
+	background-size: 0.55rem;
+}
+
+section ul li:last-child span {
+	background: url(../images/icon2.png) no-repeat left 0.3rem center;
+	background-size: 0.35rem;
+}

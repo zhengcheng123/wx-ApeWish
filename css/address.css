@@ -1,0 +1,149 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #f8f8f8;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	width: 100%;
+	background-color: #FFFFFF;
+	position: relative;
+	font-size: 18px;
+	font-family: "microsoft yahei";
+	line-height: 60px;
+	text-align: center;
+}
+
+header i {
+	position: absolute;
+	margin: auto;
+	left: 20px;
+	top: 0;
+	bottom: 0;
+	width: 16px;
+	height: 16px;
+	background: url(../images/arrow-left.png) no-repeat center center;
+	background-size: contain;
+}
+
+section {
+	flex: 1;
+	margin-top: 10px;
+	overflow: auto;
+}
+
+section.no-address {
+	background: url(../images/no-address.png) no-repeat center top 30px;
+	background-size: 200px;
+}
+
+section ul li {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	padding: 10px 0 5px;
+	background-color: #FFFFFF;
+}
+
+section ul li p {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+	padding: 0 20px;
+}
+
+section ul li p span {
+	font-size: 14px;
+}
+
+section ul li p span:first-child {
+	min-width: 100px;
+	width: 100px;
+}
+
+section ul li p.username span:last-child {
+	overflow-x: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+section ul li p.address-detail span:last-child {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+section ul li div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+section ul li div.operate-box {
+	padding: 15px 20px;
+	border-top: 1px solid #f0f0f0;
+}
+
+section ul li div i.set-default {
+	display: block;
+	width: 14px;
+	height: 14px;
+	background-color: #C0C0C0;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+section ul li div i.active {
+	background-color: #cf81a2;
+}
+
+section ul li div.operate span {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+section ul li div.operate span i {
+	margin-right: 5px;
+}
+
+section ul li div.operate span.edit-address {
+	margin-right: 15px;
+}
+
+section ul li div.operate span.edit-address i {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../images/edit.png) no-repeat center center;
+	background-size: contain;
+}
+
+section ul li div.operate span.delete-address i {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../images/delete.png) no-repeat center center;
+	background-size: contain;
+}
+
+footer {
+	background: #f8f8f8;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer button {
+	width: 90%;
+	height: 40px;
+	background: #FFFFFF;
+	border: 1px solid #e1e1e1;
+	border-radius: 6px;
+}

@@ -1,0 +1,178 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #f8f8f8;
+}
+
+header {
+	width: 100%;
+	background-color: #FFFFFF;
+	position: relative;
+	font-size: 18px;
+	font-family: "microsoft yahei";
+	line-height: 60px;
+	text-align: center;
+}
+
+header i {
+	position: absolute;
+	margin: auto;
+	left: 20px;
+	top: 0;
+	bottom: 0;
+	width: 16px;
+	height: 16px;
+	background: url(../images/arrow-left.png) no-repeat center center;
+	background-size: contain;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+div.main {
+	margin-top: 10px;
+}
+
+div.main ul li {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 15px;
+	background-color: #FFFFFF;
+	margin-bottom: 8px;
+}
+
+div.main ul li.address-detail {
+	align-items: flex-start;
+}
+
+div.main ul li.address-detail label {
+	margin-top: 2px;
+}
+
+div.main ul li label {
+	width: 70px;
+	min-width: 70px;
+}
+
+div.main ul li .arrow-right {
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: url(../images/arrow-right.png) no-repeat center center;
+	background-size: contain;
+	transform: rotate(90deg);
+}
+
+div.main ul li input,
+textarea {
+	flex: 1;
+	border: none;
+	background-color: transparent;
+}
+
+div.btn {
+	padding: 20px 10px 0;
+}
+
+div.btn button {
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	border: none;
+	border-radius: 10px;
+	font-size: 16px;
+	color: #000000;
+}
+
+div.btn button.save {
+	background-color: #df9ab8;
+	margin-bottom: 20px;
+}
+
+div.btn button.cancel {
+	background-color: #FFFFFF;
+	border: 1px solid #e1e1e1;
+}
+
+div.editBtn button {
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	border: none;
+	border-radius: 4px;
+	background-color: #C60A1E;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+/*选择地区弹层*/
+.express-area-box {
+	position: fixed;
+	bottom: -100%;
+	z-index: 15;
+	width: 100%;
+	background-color: #fff;
+	color: #4d525d;
+}
+
+.express-area-box div.top {
+	position: relative;
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.express-area-box div.top h3 {
+	margin: 10px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.express-area-box div.top .back,
+.express-area-box div.top .close {
+	position: absolute;
+	top: 0;
+	width: 20px;
+	height: 41px;
+}
+
+.express-area-box div.top .back {
+	display: none;
+	left: 0;
+	background: url(../images/left.png) no-repeat center;
+	background-size: 16px;
+}
+
+.express-area-box div.top .close {
+	right: 0;
+	background: url(../images/close_area.png) no-repeat center;
+	background-size: 16px;
+}
+
+.express-area-box article {
+	height: 250px;
+	overflow-y: scroll;
+}
+
+.area-list li {
+	padding: 10px;
+	border-bottom: 1px solid #e2e2e2;
+	text-align: justify;
+	font-size: 14px;
+}
+
+/*遮罩层*/
+
+.mask {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 12;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+}

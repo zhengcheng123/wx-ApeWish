@@ -1,0 +1,84 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #f8f8f8;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	width: 100%;
+	background-color: #FFFFFF;
+	position: relative;
+	font-size: 18px;
+	font-family: "microsoft yahei";
+	line-height: 60px;
+	text-align: center;
+}
+
+header i {
+	position: absolute;
+	margin: auto;
+	left: 20px;
+	top: 0;
+	bottom: 0;
+	width: 16px;
+	height: 16px;
+	background: url(../images/arrow-left.png) no-repeat center center;
+	background-size: contain;
+}
+
+section {
+	flex: 1;
+	margin-top: 10px;
+	overflow: auto;
+}
+
+section ul li {
+	display: flex;
+	flex-direction: row;
+	padding: 10px 20px;
+	margin-bottom: 1px;
+	background-color: #FFFFFF;
+}
+
+section ul li img {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #f0f0f0;
+	border-radius: 10px;
+}
+
+section ul li div {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px 0 10px 20px;
+}
+
+section ul li div p {
+	align-self: flex-start;
+	width: 90%;
+	font-size: 14px;
+	color: #585858;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+section ul li div button {
+	align-self: flex-end;
+	width: 55px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #808080;
+	background-color: #d2d2d2;
+	border-radius: 50px;
+}
+
+section ul li div button.active {
+	color: #FFFFFF;
+	background-color: #df9ab8;
+}

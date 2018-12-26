@@ -1,0 +1,196 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	min-height: 12rem;
+	background-color: #df87ad;
+}
+
+.read {
+	width: 100%;
+	height: 100%;
+	background: url(../images/list1.png) no-repeat center 0.8rem;
+	background-size: 90%;
+	background-color: #41547e;
+	display: flex;
+	flex-direction: column;
+}
+
+.read section .content {
+    font-size: 0.16rem;
+    height: 6.5rem;
+    text-align: center;
+    margin-top: 3.8rem;
+    padding: 0 1.8rem;
+    overflow-y: auto;
+}
+
+.read section .btn {
+	margin-top: 0.7rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.read section .btn button {
+	text-align: center;
+	height: 0.5rem;
+	width: 2rem;
+	border-radius: .2rem;
+	font-size: 0.20rem;
+	color: #fff;
+	background-color: #f9df80;
+	box-shadow: 3px 4px 0px #ffb365;
+	color: #dc7ba4;
+}
+
+.read section .btn label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.18rem;
+}
+
+
+.read section .btn label span {
+	font-size: 0.14rem;
+	color: #666;
+}
+
+input[type='checkbox'] {
+	display: inline-block;
+	width: 0.25rem;
+	height: 0.25rem;
+	max-width: 20px;
+	max-height: 20px;
+}
+
+
+/*抽奖页面*/
+.com-main {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: url(../images/machine.jpg) no-repeat center top;
+	background-size: 100% auto;
+}
+
+.com-main dl {
+	margin: auto;
+	top: 4.78rem;
+	left: 0;
+	right: 0;
+	height: 2.24rem;
+	width: 4.3rem;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	/*background-color: #4a5f8d;*/
+}
+
+.com-main dl dd {
+	flex: 1;
+	height: 2.24rem;
+	background-color: #fff;
+	background-size: cover;
+	background-position: left top;
+	background-repeat: repeat-y;
+	background-color: #4a5f8d;
+	border-right: 0.2rem solid #4a5f8d;
+	position: relative;
+}
+
+.com-main dl dd.gb {
+	/*背景每件商品图宽高130px，分隔栏高15px*/
+	background-image: url(../images/goods-list.jpg);
+	background-position-y: 0.47rem;
+	/*background-position-y: 0;*/
+}
+
+.com-main dl dd:last-child {
+	margin-right: 0;
+	border: none;
+}
+
+.com-main .play-btn {
+	width: 2.9rem;
+	height: 0.9rem;
+	background-image: url(../images/button1.png);
+	background-size: 100%;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 7.2rem;
+	right: 0;
+	left: 0;
+	margin: auto;
+	transition: all 200ms;
+	-webkit-transition: all 200ms;
+	-o-transition: all 200ms;
+	-moz-transition: all 200ms;
+}
+
+.com-main .play-btn.active {
+	background-image: url(../images/button2.png);
+	background-size: 100%;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+.try-again {
+	visibility: hidden;
+}
+
+.try-again section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: .6rem;
+	background-color: #dc7ba4;
+	width: 300px;
+	height: 350px;
+}
+
+.try-again section .pic {
+	width: 90%;
+	height: 200px;
+	background: url(../images/again.png) no-repeat center center;
+	background-size: contain;
+}
+
+.try-again section button {
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f9df80;
+    box-shadow: 3px 4px 0px #ffb365;
+    color: #dc7ba4;
+    border-radius: 6px;
+}
+
+.success {
+	visibility: hidden;
+	background-color: #df87ad;
+	align-items: flex-start;
+	overflow-y: auto;
+}
+
+.success section img {
+	width: 100vw;
+}
+
+.fail {
+	visibility: hidden;
+	background-color: #df87ad;
+	align-items: flex-start;
+	overflow-y: auto;
+}
+
+.fail section img {
+	width: 100vw;
+}
